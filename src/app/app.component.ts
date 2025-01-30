@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailsService } from './services/product-details.service';
+import { MatTableModule } from '@angular/material/table';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule],
+  imports: [RouterOutlet, HttpClientModule, MatTableModule, CommonModule],
   providers: [ProductDetailsService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
